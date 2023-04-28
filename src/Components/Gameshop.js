@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import Gameshop from './Gameshop'
 export default function Gameshop(){
     const [games, setGames] = useState([]);
 
@@ -22,10 +23,97 @@ export default function Gameshop(){
    ))}
    </>
   );
-   
 }
 
+export const store = [
+    {
+      title: "",
+      id: 1,
+      released: "",
+      genres: ["", ""],
+      link: "",
+      img: "",
+ 
+    },
+    {
+      title: "",
+      id: 2,
+      released: "",
+      genres: ["", ""],
+      link: "",
+      img: "",
+    
+    },
+    {
+      title: "",
+      id: 3,
+      released: "",
+      genres: ["", "", ""],
+      link: "",
+      img: "",
+    
+    },
+    {
+      title: "",
+      id: 4,
+      released: "",
+      genres: ["", "", ""],
+      link: "",
+      img: "",
+ 
+    },
+    {
+      title: "",
+      id: 5,
+      released: "",
+      genres: ["", "", ""],
+      link: "",
+      img: "",
+    }
+  ]
 
+  export const mygames = [
+    {
+      title: "",
+      id: 6,
+      released: "",
+      genres: ["", ""],
+      link: "",
+      img: "",
+    },
+    {
+      title: "",
+      id: 7,
+      released: "",
+      genres: ["", ""],
+      link: "",
+      img: "",
+    },
+    {
+      title: "",
+      id: 8,
+      released: "",
+      genres: ["", ""],
+      link: "",
+      img: "",
+    },
+    {
+      title: "",
+      id: 9,
+      released: "",
+      genres: ["", "", ""],
+      link: "",
+      img: "",
+    },
+    {
+      title: "",
+      id: 10,
+      released: "",
+      genres: ["", ""],
+      link: "",
+      img: "",
+    }
+  ]
 
 
 
