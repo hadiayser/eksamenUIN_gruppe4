@@ -60,7 +60,6 @@ export const store = [
       genres: ["", "", ""],
       link: "",
       img: "",
- 
     },
     {
       title: "",
@@ -69,10 +68,7 @@ export const store = [
       genres: ["", "", ""],
       link: "",
       img: "",
-    }
-  ]
-
-  export const mygames = [
+    },
     {
       title: "",
       id: 6,
