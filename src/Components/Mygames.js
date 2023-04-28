@@ -5,7 +5,7 @@ export default function Mygames() {
     
       useEffect(() => {
         const hentSpill = async () => {
-          const response = await fetch(`https://api.rawg.io/api/games?key=d756e11d41c9402e9f5ee9be11373a5f&page_size=20&genres=4%27`);
+          const response = await fetch(`https://api.rawg.io/api/games?key=d756e11d41c9402e9f5ee9be11373a5f&page_size=20&genres=2`);
           const data = await response.json();
           const test1= data.results; 
           setGames(test1)
