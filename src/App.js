@@ -3,7 +3,9 @@ import '../src/css/main.css';
 import Dashboard from './Components/Dashboard';
 import Gameshop from './Components/Gameshop';
 import Mygames from './Components/Mygames';
+import Navbar from './Components/Navbar';
 import {Route, Routes } from 'react-router-dom';
+
 
 function App() {
   return (
