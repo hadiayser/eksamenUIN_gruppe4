@@ -13,6 +13,7 @@ function App() {
         <Route path="/" element={<Dashboard />} />
         <Route path="/gameshop" element={<Gameshop />} />
         <Route path="/mygames" element={<Mygames />} />
+        <Route path="/navbar" element={<Navbar />} />
       </Routes>
   );
 }
