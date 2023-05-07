@@ -6,6 +6,7 @@ import Mygames from './Components/Mygames';
 import Navbar from './Components/Navbar';
 import {Route, Routes } from 'react-router-dom';
 import Gamecard from './Components/GameCard';
+import GamePage from './Components/GamePage';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/mygames" element={<Mygames />} />
         <Route path="/game/:slug" element={<Gamecard />} />
         <Route path="/navbar" element={<Navbar />} />
+        <Route path="/gamepage/:slug" element={<GamePage />} />
       </Routes>
       </div>
   );
