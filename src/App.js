@@ -5,16 +5,21 @@ import Gameshop from './Components/Gameshop';
 import Mygames from './Components/Mygames';
 import Navbar from './Components/Navbar';
 import {Route, Routes } from 'react-router-dom';
+import GameCard from './Components/GameCard';
 
 
 function App() {
   return (
+    <div>
+        <Navbar/>
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/gameshop" element={<Gameshop />} />
         <Route path="/mygames" element={<Mygames />} />
+        <Route path="/game/:slug" element={<GameCard />} />
         <Route path="/navbar" element={<Navbar />} />
       </Routes>
+      </div>
   );
 }
 

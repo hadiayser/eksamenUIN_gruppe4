@@ -1,16 +1,22 @@
+import { Link } from "react-router-dom";
+
 export default function Navbar() {
-    return <nav className="nav">
-        <a href="/" className="site-title">Navnet på siden</a>
-        <ul>
-            <li>
-                <a href="Gameshop">Gameshop</a>
-            </li>
-            <li>
-                <a href="MyFavorites">My Favorites</a>
-            </li>
-            <li>
-                <a href="Mygames">My Games</a>
-            </li>
-        </ul>
+  return (
+    <nav className="nav">
+      <Link to="/" className="site-title">
+        Navnet på siden
+      </Link>
+      <ul>
+        <li>
+          <Link to="/gameshop">Gameshop</Link>
+        </li>
+        <li>
+          <Link to="/myfavorites">My Favorites</Link>
+        </li>
+        <li>
+          <Link to="/mygames">My Games</Link>
+        </li>
+      </ul>
     </nav>
+  );
 }

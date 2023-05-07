@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import { Link } from "react-router-dom";
 
 export default function Dashboard() {
 const [games, setGames] = useState([]);
@@ -19,7 +20,9 @@ const [games, setGames] = useState([]);
    {games.map(game =>(
     <div key={game.id}>
         <p>{game.name}</p>
-        <img src={game.background_image}></img>
+        <Link to={`/game/${game.slug}`}>
+            <img src={game.background_image}></img>
+            </Link>
     </div>
    ))}
    </>

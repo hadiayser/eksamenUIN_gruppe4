@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import { Link } from "react-router-dom";
 
 export default function Mygames() {
     const [games, setGames] = useState([]);
@@ -19,8 +20,10 @@ export default function Mygames() {
        <>
        {games.map(game =>(
         <div key={game.id}>
+            <Link to={`/game/${game.slug}`}>
             <p>{game.name}</p>
             <img src={game.background_image}></img>
+            </Link>
         </div>
        ))}
        </>
