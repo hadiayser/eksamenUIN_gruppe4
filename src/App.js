@@ -5,7 +5,7 @@ import Gameshop from './Components/Gameshop';
 import Mygames from './Components/Mygames';
 import Navbar from './Components/Navbar';
 import {Route, Routes } from 'react-router-dom';
-import GameCard from './Components/GameCard';
+import Gamecard from './Components/Gamecard';
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         <Route path="/" element={<Dashboard />} />
         <Route path="/gameshop" element={<Gameshop />} />
         <Route path="/mygames" element={<Mygames />} />
-        <Route path="/game/:slug" element={<GameCard />} />
+        <Route path="/game/:slug" element={<Gamecard />} />
         <Route path="/navbar" element={<Navbar />} />
       </Routes>
       </div>
