@@ -17,6 +17,7 @@ export default function Gameshop(){
    {games.map(game =>(
     <div key={game.id}>
         <p>{game.name}</p>
+        <p>{game.genres.map((genre) => genre.name).join(", ")}</p>
         <img src={game.background_image}></img>
     </div>
    ))}

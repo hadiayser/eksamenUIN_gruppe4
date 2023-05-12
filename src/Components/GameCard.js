@@ -17,6 +17,7 @@ export default function GameCard() {
   return (
     <div>
       <h1>{game?.name}</h1>
+      <p>{game.genres}</p>
       <img src={game?.background_image} alt={game?.name} />
       <Link to={`/gamepage/${slug}`}>
         <button>Spillside</button>

@@ -20,10 +20,11 @@ const [games, setGames] = useState([]);
    {games.map(game =>(
     <div key={game.id}>
         <p>{game.name}</p>
+        <p>{game.genres.map((genre) => genre.name).join(", ")}</p>
         <Link to={`/game/${game.slug}`}>
             <img src={game.background_image}></img>
             </Link>
-    </div>
+    </div> 
    ))}
    </>
   );
