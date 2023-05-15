@@ -18,7 +18,7 @@ export default function GamePage() {
   return (
     <div>
       <h1>{game?.name}</h1>
-      <p>{game.genres.map((genre) => genre.name).join(", ")}</p>
+      <p>{game?.genres.map((genre) => genre.name).join(", ")}</p>
       <img src={game?.background_image} alt={game?.name} />
       <p>{game?.description_raw}</p>
     </div>

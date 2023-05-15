@@ -22,9 +22,9 @@ export default function Mygames() {
         <div key={game.id}>
             <Link to={`/game/${game.slug}`}>
             <p>{game.name}</p>
-            <p>{game.genres.map((genre) => genre.name).join(", ")}</p>
-            <img src={game.background_image}></img>
+            <img src={game?.background_image} alt={game?.name} />
             </Link>
+            <p>{game.genres.map((genre) => genre.name).join(", ")}</p>
         </div>
        ))}
        </>
