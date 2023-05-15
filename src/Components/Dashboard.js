@@ -1,34 +1,26 @@
-import React, {useEffect, useState} from "react";
-import { Link } from "react-router-dom";
+import { useHentSpill } from "./HentSpill";
+import Games from "./Games";
 
 export default function Dashboard() {
-const [games, setGames] = useState([]);
+    const gameShopTre =
+    'https://api.rawg.io/api/games?key=d756e11d41c9402e9f5ee9be11373a5f&ordering=released&page_size=3';
+    
+     const myGamesfire =
+    'https://api.rawg.io/api/games?key=d756e11d41c9402e9f5ee9be11373a5f&page_size=4&genres=2';
 
-  useEffect(() => {
-    const hentSpill = async () => {
-      const response = await fetch(`https://api.rawg.io/api/games?key=d756e11d41c9402e9f5ee9be11373a5f`);
-      const data = await response.json();
-      const test1= data.results; 
-      setGames(test1)
-      console.log(test1)
-    };
-    hentSpill();
-  }, []);
+    const gameShopSpill = useHentSpill(gameShopTre);
+    const myGamesSpill = useHentSpill(myGamesfire);
 
-  return (
-   <>
-   {games.map(game =>(
-    <div key={game.id}>
-        <p>{game.name}</p>
-        <p>{game.genres.map((genre) => genre.name).join(", ")}</p>
-        <Link to={`/game/${game.slug}`}>
-            <img src={game.background_image}></img>
-            </Link>
-            <Link to="/gameshop">
-        <button>Visit shop</button>
-      </Link>
-    </div> 
-   ))}
-   </>
-  );
-}
+    return(
+      <>
+      <h1>Gameshop</h1>
+      {gameShopSpill.map((game)=>(
+        <Games game={game}/>
+      ))}
+      <h1>MyGames</h1>
+      {myGamesSpill.map((game)=>(
+        <Games game={game}/>
+      ))}
+      </>
+    )
+   }
