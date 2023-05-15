@@ -8,10 +8,10 @@ export default function Gameshop(){
     return(
     <>
    {games.map(game =>(
-    <div key={game.id}>
-        <p>{game.name}</p>
+    <div className="game-shop" key={game.id}>
+        <p className="game-name">{game.name}</p>
         <p>{game.genres.map((genre) => genre.name).join(", ")}</p>
-        <img src={game.background_image}></img>
+        <img className="game-image" src={game.background_image}></img>
     </div>
    ))}
    </>

@@ -19,10 +19,10 @@ export default function Mygames() {
       return (
        <>
        {games.map(game =>(
-        <div key={game.id}>
+        <div className="my-games" key={game.id}>
             <Link to={`/game/${game.slug}`}>
-            <p>{game.name}</p>
-            <img src={game?.background_image} alt={game?.name} />
+            <p className="game-name">{game.name}</p>
+            <img className="game-image" src={game?.background_image} alt={game?.name} />
             </Link>
             <p>{game.genres.map((genre) => genre.name).join(", ")}</p>
         </div>
