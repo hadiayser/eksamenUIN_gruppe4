@@ -24,6 +24,9 @@ const [games, setGames] = useState([]);
         <Link to={`/game/${game.slug}`}>
             <img src={game.background_image}></img>
             </Link>
+            <Link to="/gameshop">
+        <button>Visit shop</button>
+      </Link>
     </div> 
    ))}
    </>
