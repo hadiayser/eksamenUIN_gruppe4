@@ -15,9 +15,9 @@ export default function Gameshop(){
     return(
     <>
    {games.map(game =>(
-    <div key={game.id}>
-        <p>{game.name}</p>
-        <img src={game.background_image}></img>
+    <div className="game-shop" key={game.id}>
+        <img className="game-image" src={game.background_image}></img>
+        <p className="game-name">{game.name}</p>
     </div>
    ))}
    </>

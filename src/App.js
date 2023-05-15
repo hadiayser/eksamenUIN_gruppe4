@@ -5,7 +5,7 @@ import Gameshop from './Components/Gameshop';
 import Mygames from './Components/Mygames';
 import Navbar from './Components/Navbar';
 import {Route, Routes } from 'react-router-dom';
-import Gamecard from './Components/Gamecard';
+import Gamecard from './Components/GameCard';
 
 
 function App() {

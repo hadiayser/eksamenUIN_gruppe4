@@ -1,6 +1,120 @@
+:root {
+  --maxwidth: 1200px;
+  font-size: 20px;
+}
+
+body {
+  background-color: #5c4660;
+}
+
 img {
   width: 300px;
+  height: 200px;
+}
+
+nav {
+  width: 100%;
+  background-color: #000000;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  flex-direction: column;
+}
+
+.site-title {
+  display: flex;
+  font-size: 1rem;
+  text-align: left;
+  text-decoration: none;
+  color: white;
+  padding-left: 3rem;
+  padding-top: 3rem;
+}
+
+li {
+  padding-right: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.options {
+  display: flex;
+  justify-content: end;
+  padding-right: 2rem;
+}
+
+.dashboard {
+  padding-left: 2.5rem;
+  padding-top: 2rem;
+  background-color: #5c4660;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.game-image {
+  box-shadow: 0px 5px 5px 0px;
+  color: #3a2543;
+}
+
+.game-name {
+  margin-top: 10px;
+  color: white;
+  align-items: center;
+}
+
+.game-shop {
+  padding-left: 2.5rem;
+  padding-top: 2rem;
+  background-color: #5c4660;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.my-games {
+  padding-left: 2.5rem;
+  padding-top: 2rem;
+  background-color: #5c4660;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.game-card {
+  color: white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding: 15px 15px;
+  background-color: #5c4660;
+  margin-bottom: 20px;
+}
+
+.gamecard-name {
+  display: flex;
+  justify-content: baseline;
+  padding-left: 2rem;
+}
+
+.gamecard-image {
+  width: 400px;
   height: 300px;
+  padding-left: 2rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 2rem;
+}
+
+.game-description {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 /*# sourceMappingURL=main.css.map */

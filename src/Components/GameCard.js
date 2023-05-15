@@ -15,10 +15,10 @@ export default function GameCard() {
   }, [slug]);
 
   return (
-    <div>
-      <h1>{game?.name}</h1>
-      <img src={game?.background_image} alt={game?.name} />
-      <p>{game?.description_raw}</p>
+    <div className="game-card">
+      <h1 className="gamecard-name">{game?.name}</h1>
+      <img className="gamecard-image" src={game?.background_image} alt={game?.name} />
+      <p className= "game-description">{game?.description_raw}</p>
     </div>
   );
 }

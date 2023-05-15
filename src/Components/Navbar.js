@@ -4,9 +4,9 @@ export default function Navbar() {
   return (
     <nav className="nav">
       <Link to="/" className="site-title">
-        Navnet på siden
+        <h1>Gamehub </h1>
       </Link>
-      <ul>
+      <ul className= "options">
         <li>
           <Link to="/gameshop">Gameshop</Link>
         </li>

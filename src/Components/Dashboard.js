@@ -18,11 +18,11 @@ const [games, setGames] = useState([]);
   return (
    <>
    {games.map(game =>(
-    <div key={game.id}>
-        <p>{game.name}</p>
+    <div className="dashboard" key={game.id}>
         <Link to={`/game/${game.slug}`}>
-            <img src={game.background_image}></img>
+            <img src={game.background_image} className="game-image"></img>
             </Link>
+        <p className= "game-name">{game.name}</p>
     </div>
    ))}
    </>

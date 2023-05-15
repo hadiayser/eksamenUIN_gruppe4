@@ -19,10 +19,10 @@ export default function Mygames() {
       return (
        <>
        {games.map(game =>(
-        <div key={game.id}>
+        <div className="my-games" key={game.id}>
             <Link to={`/game/${game.slug}`}>
-            <p>{game.name}</p>
-            <img src={game.background_image}></img>
+            <img className="game-image"src={game.background_image}></img>
+            <p className="game-name">{game.name}</p>
             </Link>
         </div>
        ))}
