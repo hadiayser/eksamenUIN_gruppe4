@@ -13,11 +13,11 @@ export default function Dashboard() {
 
     return(
       <>
-      <h1>Gameshop</h1>
+      <h2>Gameshop</h2>
       {gameShopSpill.map((game)=>(
         <Games game={game}/>
       ))}
-      <h1>MyGames</h1>
+      <h2>MyGames</h2>
       {myGamesSpill.map((game)=>(
         <Games game={game}/>
       ))}
