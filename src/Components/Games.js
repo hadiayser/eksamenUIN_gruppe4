@@ -9,6 +9,8 @@ export default function Games({game}){
             </Link>
             <Link to="/gameshop">
         <button>Visit shop</button>
+      </Link>
+      <Link to="/myfavories">
         <button>Add to favorites</button>
       </Link>
     </div> 
