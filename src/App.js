@@ -5,7 +5,6 @@ import Dashboard from './Components/Dashboard';
 import Gameshop from './Components/Gameshop';
 import Mygames from './Components/Mygames';
 import Navbar from './Components/Navbar';
-import GameCard from './Components/GameCard';
 import GamePage from './Components/GamePage';
 import MyFavorites from './Components/MyFavorites';
 
