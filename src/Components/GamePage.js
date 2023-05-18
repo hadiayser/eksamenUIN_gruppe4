@@ -2,9 +2,12 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 
-export default function GamePage() {
+export default function GamePage({setFavorites}) {
   const { slug } = useParams();
   const [game, setGame] = useState(null);
+  const addToFavorites = (game) => {
+    setFavorites((prevFavorites) => [...prevFavorites, game]);
+  };
 
   useEffect(() => {
     const fetchGame = async () => {
@@ -17,10 +20,13 @@ export default function GamePage() {
 
   return (
     <div>
-      <h1>{game?.name}</h1>
-      <p>{game?.genres.map((genre) => genre.name).join(", ")}</p>
-      <img src={game?.background_image} alt={game?.name} />
-      <p>{game?.description_raw}</p>
+      <h1 className="game-name">{game?.name}</h1>
+      <p className="game-name">{game?.genres.map((genre) => genre.name).join(", ")}</p>
+      <p className="game-name">Rating: {game?.rating}</p>
+      <p className="game-name">Released: {game?.released}</p>
+      <img className="game-image" src={game?.background_image} alt={game?.name} />
+      <button onClick={() => addToFavorites(game)}>Add to favorites</button>
+      <p className="game-name">{game?.description_raw}</p>
     </div>
   );
 }

@@ -1,14 +1,19 @@
-/*export default function Myfavorites(){
-    return
-}*/
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 
-const AddFavorite = () => {
-    return (
-    <>
-        
-    </>
-    );
+const MyFavorites = ({ favorites }) => {
+  return (
+    <div>
+      <h2>My Favorites</h2>
+      {favorites.map((game) => (
+        <div className="my-games" key={game.id}>
+          <h3 className="game-name">{game.name}</h3>
+          <Link to={`/game/${game.slug}`}>
+          <img className="game-image" src={game.background_image} alt={game.name} />
+          </Link>
+        </div>
+      ))}
+    </div>
+  );
 };
-
-export default AddFavorite;
+export default MyFavorites;
