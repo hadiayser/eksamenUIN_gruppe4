@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
 const MyFavorites = ({ favorites }) => {
   return (
@@ -13,7 +14,9 @@ const MyFavorites = ({ favorites }) => {
           </Link>
         </div>
       ))}
+      <Footer/>
     </div>
+    
   );
 };
 export default MyFavorites;

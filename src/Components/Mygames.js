@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
 export default function Mygames() {
     const [games, setGames] = useState([]);
@@ -27,6 +28,7 @@ export default function Mygames() {
             <p>{game.genres.map((genre) => genre.name).join(", ")}</p>
         </div>
        ))}
+       <Footer/>
        </>
       );
     }

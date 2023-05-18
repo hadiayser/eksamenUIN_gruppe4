@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Footer from "./Footer";
 
 
 export default function GamePage({setFavorites}) {
@@ -27,6 +28,7 @@ export default function GamePage({setFavorites}) {
       <img className="game-image" src={game?.background_image} alt={game?.name} />
       <button onClick={() => addToFavorites(game)}>Add to favorites</button>
       <p className="game-name">{game?.description_raw}</p>
+      <Footer/>
     </div>
   );
 }

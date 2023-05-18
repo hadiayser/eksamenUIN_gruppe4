@@ -2,6 +2,7 @@ import React from "react";
 import { useHentSpill } from "./HentSpill";
 import Games from "./GameCard";
 import MyFavorites from "./MyFavorites";
+import Footer from "./Footer";
 
 export default function Dashboard({ addToFavorites, favorites }) {
   const gameShopTre =
