@@ -1,4 +1,3 @@
-import React, {useEffect, useState} from "react";
 import { useHentSpill } from "./HentSpill";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
