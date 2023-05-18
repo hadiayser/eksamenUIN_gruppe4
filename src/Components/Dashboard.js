@@ -20,7 +20,7 @@ export default function Dashboard({ addToFavorites, favorites }) {
       {gameShopSpill.map((game) => (
         <Games game={game} key={game.id} addToFavorites={addToFavorites} showVisitShop={true}/>
       ))}
-      <h2>MyGames</h2>
+      <h2>My Games</h2>
       {myGamesSpill.map((game) => (
         <Games game={game} key={game.id} addToFavorites={addToFavorites} showVisitShop={false} />
       ))}

@@ -34,8 +34,7 @@ nav {
 
 .site-title {
     display: flex;
-    
-    font-size: 1rem; 
+    font-size: 1.3rem; 
     text-align: left;
     text-decoration: none;
     color: $white; 
@@ -58,6 +57,11 @@ color: $white;
     justify-content: end;
     padding-right: 2rem;
     
+}
+
+h2{
+    padding-left: 2.5rem;
+    color: $white;
 }
 
 
@@ -114,7 +118,6 @@ color: $white;
 // GameCard --------------------------------
 .game-card { 
     color: $white;
-   
     padding-left: 2rem;
     padding-right: 2rem;
     padding: 15px 15px; 
@@ -146,6 +149,13 @@ padding-left: 2rem;
  }
 
 
- 
+ footer {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    background-color: $black;
+    color: white; 
+    border: 5rem;
+ }
   
 

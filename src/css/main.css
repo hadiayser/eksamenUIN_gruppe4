@@ -23,7 +23,7 @@ nav {
 
 .site-title {
   display: flex;
-  font-size: 1rem;
+  font-size: 1.3rem;
   text-align: left;
   text-decoration: none;
   color: white;
@@ -44,6 +44,11 @@ a {
   display: flex;
   justify-content: end;
   padding-right: 2rem;
+}
+
+h2 {
+  padding-left: 2.5rem;
+  color: white;
 }
 
 .dashboard {
@@ -115,6 +120,15 @@ a {
 .game-description {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+footer {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  color: white;
+  border: 5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
