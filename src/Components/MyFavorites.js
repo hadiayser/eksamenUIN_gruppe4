@@ -19,4 +19,7 @@ const MyFavorites = ({ favorites }) => {
     
   );
 };
+
+// Kilde til hjelp av myfavorites: https://www.freecodecamp.org/news/react-movie-app-tutorial/ 
+
 export default MyFavorites;
